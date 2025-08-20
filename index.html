@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button id="searchBtn">Search</button>
+
+
+    <div class="units">
+      <label for=""><input type="radio" name="units" value="metric" checked>°C</label>
+      <label for=""><input type="radio" name="units" value="imperial" >°F</label>
+    </div>
+    
+    <button id="geo-btn" class="secondary">User my location</button>
+
+    
+    <div id="weatherResult" class="hidden">
+      <h2 id="cityName"></h2>
+      <img id="icon" class="hidden" alt="Weather icon for dummies"/>
+      <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+      <p><strong>Condition:</strong> <span id="condition"></span></p>
+      <p><strong>Feels like:</strong><span id="feels-like">-</span></p>
+      <p><strong>Min / Max:</strong><span id="minmax">-</span></p>
+      <p><strong>Humidity:</strong><span id="humidity">-</span></p>
+      <p><strong>Wind:</strong><span id="wind">-</span></p>
+      <p><strong>Direction:</strong><span id="wind-dir">-</span><span id="wind-arrow" aria-hidden="true">🧭</span></p>
+      <p id="wind-gust" class="hidden"><strong>Gusts:</strong><span id="gust-val">-</span></p>
+    </div>
+      <p class="hidden error">
+      <strong>Error: </strong><span id="error"></span>
+    </p>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
