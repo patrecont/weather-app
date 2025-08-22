@@ -19,6 +19,7 @@ Weather-App/
 ├── style.css
 └── script.js   
 
+---
 
 ## 🧠 What I learned
 
@@ -27,11 +28,14 @@ Weather-App/
 - How to use API
 - Controllers for Fetch requests
 
+---
 
 ## 🪄 Future Improvements
 
 - Enhanced styling and animations  
 - Make the layout responsive for mobile and tablet devices  
+
+---
 
 ## 🎮 Live Demo
 
